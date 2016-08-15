@@ -1,0 +1,9 @@
+MY_BASH_DIR=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
+
+source ${MY_BASH_DIR}/data/_folderconfig.sh
+
+source ${MY_BASH_DIR}/libs/_cds.sh
+source ${MY_BASH_DIR}/libs/_con.sh
+source ${MY_BASH_DIR}/libs/_log.sh
+source ${MY_BASH_DIR}/libs/_mis.sh
+source ${MY_BASH_DIR}/libs/_ser.sh
