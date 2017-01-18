@@ -6,6 +6,10 @@ alias cls='find . -name ".DS_Store" -depth -exec rm {} \;'
 
 mis(){
     case $1 in
+        sar) sudo service apache2 restart
+            ;;
+        int) __int $2
+            ;;
         sdb) __sdb $2
             ;;
         chs) __chs $2
@@ -15,6 +19,7 @@ mis(){
         pcd) __pcode $2
             ;;
         *) echo 'We have ...'
+           echo 'sar : apache2 restart'
            echo 'sdb : switch db'
            echo 'chs : chmod the storage'
            echo 'log : tail latest logfile'
@@ -52,4 +57,7 @@ __sdb(){
 }
 __pcode(){
     phpmd $1 text codesize;
+}
+__int(){
+    /usr/bin/xmodmap /home/aj/.Xmodmap
 }

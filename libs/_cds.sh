@@ -8,7 +8,7 @@ cds(){
 			;;
 		k) cd ${MY_PROJECT_FOLDER}cue
 			;;
-		m) cd ${MY_PROJECT_FOLDER}MyMongiew
+		m) cd ${MY_PROJECT_FOLDER_ROOT}my/$2
 			;;
 		l) cd ${MY_PROJECT_FOLDER}
 			;;
@@ -32,7 +32,7 @@ cdsHelp(){
 	echo "a = '${MY_PROJECT_FOLDER}araas'"
 	echo "i = '${MY_PROJECT_FOLDER}integrations'"
 	echo "k = '${MY_PROJECT_FOLDER}cue'"
-	echo "m = '${MY_PROJECT_FOLDER}MyMongiew'"
+	echo "m = '${MY_PROJECT_FOLDER}my'"
 	echo "l = '${MY_PROJECT_FOLDER}"
 	echo "h = '${MY_PROJECT_FOLDER_ROOT}'"
 	echo "t = '${MY_PROJECT_FOLDER_ROOT}test'"
