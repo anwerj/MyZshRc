@@ -1,4 +1,8 @@
-MY_BASH_DIR=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
+_mc_null(){
+    $1 > /dev/null 2>&1
+}
+
+MY_BASH_DIR=${0:a:h}
 
 source ${MY_BASH_DIR}/data/_config.sh
 
@@ -6,3 +10,7 @@ source ${MY_BASH_DIR}/libs/_itm.sh
 source ${MY_BASH_DIR}/libs/_cds.sh
 source ${MY_BASH_DIR}/libs/_con.sh
 source ${MY_BASH_DIR}/libs/_mis.sh
+
+HISTCONTROL=ignoreboth:erasedups
+
+source /Users/aj/projects/rzp/api/_/rzp.sh

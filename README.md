@@ -1,4 +1,4 @@
-# MyBashRc
+# MyZshRc
 
-Include file `mybashrc` to your .bashrc/.bash_profile .    
+Include file `myzshrc` to your ~/.zshrc .    
 copy _sampleconfig.sh to _config.sh in data directoty

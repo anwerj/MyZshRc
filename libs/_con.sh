@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 source ${MY_BASH_DIR}/data/_serverlist.sh
 
 con(){
