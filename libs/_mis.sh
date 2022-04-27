@@ -112,4 +112,18 @@ garcr(){
 #    __git_complete garc _git_checkout
 #    __git_complete gars _git_checkout
 #}
-#__git_com
+#__git_combootApplicationTrait
+
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
+nsukill ()
+{
+    launchctl unload /System/Library/LaunchDaemons/com.apple.nsurlstoraged.plist
+    launchctl unload /System/Library/LaunchAgents/com.apple.nsurlsessiond.plist
+    sudo launchctl unload /System/Library/LaunchDaemons/com.apple.nsurlsessiond.plist
+    sudo launchctl unload /System/Library/LaunchDaemons/com.apple.nsurlstoraged.plist
+}

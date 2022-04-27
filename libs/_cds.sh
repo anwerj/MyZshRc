@@ -6,29 +6,33 @@ cds(){
     case $1 in
         w) cd ${MY_WORK_PROJECTS}
             ;;
-        r) cd ${MY_WORK_PROJECTS}razorpay.com
+        wr) cd ${MY_WORK_PROJECTS}razorpay.com
             ;;
-        a) cd ${MY_WORK_PROJECTS}api
+        wa) cd ${MY_WORK_PROJECTS}api
             ;;
-        d) cd ${MY_WORK_PROJECTS}dashboard
+        wd) cd ${MY_WORK_PROJECTS}dashboard
             ;;
-        h) cd ${MY_WORK_PROJECTS}hulk
+        wh) cd ${MY_WORK_PROJECTS}hulk
             ;;
-        m) cd ${MY_WORK_PROJECTS}mytools
+        wm) cd ${MY_WORK_PROJECTS}mytools
             ;;
-        p) cd ${MY_PERSONAL_PROJECTS}
+        s) cd ${MY_SELF_PROJECTS}
             ;;
-        t) cd ${MY_PERSONAL_PROJECTS}test
+        st) cd ${MY_SELF_PROJECTS}test
             ;;
-        td) cd ${MY_PERSONAL_PROJECTS}test/cli/DSPHP
+        std) cd ${MY_SELF_PROJECTS}test/cli/DSPHP
             ;;
         dw) cd ${MY_HOME_FOLDER}Downloads
             ;;
         dc) cd ${MY_HOME_FOLDER}Documents
             ;;
-        gm) cd ${MY_GO_PROJECTS}src/github.com/razorpay/mozart
+        g) cd ${MY_GO_PROJECTS}/src
             ;;
-        mg) cd ${MY_GO_PROJECTS}src/my
+        gr) cd ${MY_GO_PROJECTS}/src/github.com/razorpay
+            ;;
+        grm) cd ${MY_GO_PROJECTS}src/github.com/razorpay/mozart
+            ;;
+        ga) cd ${MY_GO_PROJECTS}src/github.com/anwerj
             ;;
         *)  'cdsHelp'
             ;;
@@ -40,16 +44,19 @@ if typeset -f cdsHelp> /dev/null; then
 fi
 cdsHelp(){
     echo "Looks like you need help, mate!"
-    echo "c = '${MY_WORK_PROJECTS}connectv2'"
-    echo "a = '${MY_WORK_PROJECTS}araas'"
-    echo "i = '${MY_WORK_PROJECTS}integrations'"
-    echo "k = '${MY_WORK_PROJECTS}cue'"
-    echo "m = '${MY_WORK_PROJECTS}my'"
-    echo "l = '${MY_WORK_PROJECTS}"
-    echo "h = '${MY_PERSONAL_PROJECTS}'"
-    echo "t = '${MY_PERSONAL_PROJECTS}test'"
+    echo "w = '${MY_WORK_PROJECTS}'"
+    echo "wr = '${MY_WORK_PROJECTS}razoray.com'"
+    echo "wa = '${MY_WORK_PROJECTS}api'"
+    echo "wd = '${MY_WORK_PROJECTS}dashboard'"
+    echo "wh = '${MY_WORK_PROJECTS}hulk'"
+    echo "wm = '${MY_WORK_PROJECTS}mytools"
+    echo "s = '${MY_SELF_PROJECTS}'"
+    echo "st = '${MY_SELF_PROJECTS}test'"
+    echo "std = '${MY_SELF_PROJECTS}test/cli/DSPHP'"
     echo "dw = '/~Downloads'"
     echo "dc = '/~Documents'"
-    echo "gm = '${MY_GO_PROJECTS}src/github.com/razorpay/mozart'"
-    echo "mg = '${MY_GO_PROJECTS}src/my'"
+    echo "g = '${MY_GO_PROJECTS}/src'"
+    echo "gr = '${MY_GO_PROJECTS}src/github.com/razorpay'"
+    echo "grm = '${MY_GO_PROJECTS}src/github.com/razorpay/mozart'"
+    echo "ga = '${MY_GO_PROJECTS}src/github.com/anwerj'"
 }
